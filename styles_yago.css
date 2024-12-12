@@ -1,0 +1,285 @@
+/* Configuración básica para responsividad */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Barra de Navegación */
+header {
+    width: 100%;
+    background-color: #051a3b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.nav-logo img {
+    height: 65px;
+}
+
+nav ul {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    gap: 90px;
+}
+
+.search-bar input {
+    padding: 4%;
+    margin-right: 30px;
+}
+
+/* Barras de Información */
+.info-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 17px;
+}
+
+.info-item {
+    flex: 1;
+    background-color: rgb(218, 218, 218);
+    padding: 9px;
+    margin: 0 70px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.info-item img {
+    vertical-align: middle;
+    margin-right: 8px;
+    width: 20px;
+}
+
+/* Sección de Ofertas */
+.seccion-ofertas {
+    background-color: #f25c0f;
+    color: white;
+    text-align: center;
+    padding: 6px;
+    font-size: 40px;
+}
+
+.aviso {
+    font-size: 0.8em;
+    position: relative;
+    top: -10px;
+    left: 300px;
+}
+
+.hasta {
+    font-size: 0.75em;
+    font-weight: normal;
+    position: relative;
+    left: -150px;
+}
+
+.porcentaje {
+    font-size: 180px;
+    font-weight: bold;
+    line-height: 0.8;
+    margin: -20px;
+    position: relative;
+    right: -85px;
+}
+
+.seccion-ofertas small {
+    font-size: 15px;
+    position: relative;
+    right: -215px;
+}
+
+/* Sección de Categorías */
+.categorias {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 50px;
+    gap: 140px;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.categorias a {
+    color: black;
+}
+
+/* Sección de Zapatos */
+.zapatillas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 150px 0;
+    background-color: #f25c0f;
+    margin: 0;
+}
+
+.lebron {
+    text-align: center;
+    color: white;
+    font-size: 34px;
+    position: relative;
+    left: -760px;
+    top: -100px;
+}
+
+.lebron h1 {
+    position: relative;
+    left: -33px;
+}
+
+.lebron p {
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    left: -30px;
+    top: 10px;
+}
+
+.lebron button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 23px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left: -30px;
+    top: 25px;
+}
+
+.img-zapatilla1, .img-zapatilla2, .img-zapatilla3, .img-zapatilla4, .img-zapatilla5, .img-zapatilla6, .img-zapatilla7 {
+    width: 400px;
+    position: relative;
+}
+
+.img-zapatilla1 {
+    transform: rotate(80deg);
+    top: -260px;
+    left: 20px;
+}
+
+.img-zapatilla2 {
+    transform: rotate(0deg);
+    top: -250px;
+    left: -30px;
+}
+
+.img-zapatilla3 {
+    transform: rotate(-5deg);
+    top: -10px;
+    left: -740px;
+}
+
+.img-zapatilla4 {
+    transform: rotate(-40deg);
+    top: 70px;
+    left: -780px;
+}
+
+.img-zapatilla5 {
+    width: 620px;
+    transform: rotate(0deg);
+    top: -400px;
+    right: -1050px;
+}
+
+.img-zapatilla6 {
+    transform: rotate(13deg);
+    top: -680px;
+    right: -330px;
+}
+
+.img-zapatilla7 {
+    transform: rotate(40deg);
+    top: -550px;
+    right: -140px;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        display: none;
+        
+    }
+
+    .menu-toggle {
+        display: block;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .search-bar{
+        margin-top: -45px;
+        margin-left: 240px;
+    }
+
+    .info-bar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .info-item {
+        margin: 10px 0;
+    }
+
+    .seccion-ofertas {
+        font-size: 20px;
+    }
+
+    .aviso, .hasta, .porcentaje {
+        display: none;
+    }
+
+    .categorias {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .categorias a {
+        font-size: 16px;
+    }
+
+    .zapatillas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-zapatilla1, .img-zapatilla2, .img-zapatilla3, .img-zapatilla4, .img-zapatilla5, .img-zapatilla6, .img-zapatilla7 {
+        width: 60%;
+        position: static;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    nav ul {
+        gap: 50px;
+    }
+
+    .info-bar {
+        gap: 30px;
+    }
+
+    .categorias {
+        gap: 80px;
+    }
+
+    .zapatillas {
+        gap: 20px;
+    }
+}
