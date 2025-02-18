@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #eedf5d;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #000000;
+}
+
+#inicio, #juego {
+    background: rgb(65, 216, 103);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+    max-width: 400px;
+    margin: auto;
+}
+
+button {
+    background: #3c6da1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#tablero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+carta-memoria {
+    width: 100px;
+    height: 100px;
+    background: #0056b3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+}
+
+
+
