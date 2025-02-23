@@ -1,0 +1,62 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Tipo de letra */
+    text-align: center; /* Centra el texto */
+    background-color: #eedf5d; /* Color de fondo */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilos para los títulos */
+h1, h2 {
+    color: #000000; /* Color del texto */
+}
+
+/* Estilos para las secciones de inicio y juego */
+#inicio, #juego {
+    background: rgb(65, 216, 103); /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0); /* Sombra */
+    max-width: 400px; /* Ancho máximo */
+    margin: auto; /* Centrar en la página */
+}
+
+/* Estilos para los botones */
+button {
+    background: #3c6da1; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Elimina el borde */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cursor de puntero al pasar por encima */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Cambio de color cuando el cursor pasa sobre el botón */
+button:hover {
+    background: #0056b3; /* Nuevo color de fondo */
+}
+
+/* Estilos para el tablero del juego */
+#tablero {
+    display: flex; /* Usa flexbox para distribuir las cartas */
+    flex-wrap: wrap; /* Permite que las cartas pasen a la siguiente línea */
+    gap: 10px; /* Espaciado entre las cartas */
+    justify-content: center; /* Centra las cartas en el contenedor */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilos para las cartas del juego */
+carta-memoria {
+    width: 100px; /* Ancho de la carta */
+    height: 100px; /* Altura de la carta */
+    background: #0056b3; /* Color de fondo */
+    display: flex; /* Usa flexbox para alinear el contenido */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    font-size: 24px; /* Tamaño del texto */
+    cursor: pointer; /* Cursor de puntero */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0); /* Sombra */
+}

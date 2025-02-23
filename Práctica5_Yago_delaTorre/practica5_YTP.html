@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Práctica5_Yago_DeLaTorre</title> 
+    <link rel="stylesheet" href="practica5_YTP.css"> 
+</head>
+<body>
+    <!-- Pantalla de inicio -->
+    <div id="inicio">
+        <h1>Encuentra las parejas</h1> <!-- Título del juego -->
+        <p>Haz click en las tarjetas para encontrar su pareja.</p> <!-- Instrucción -->
+        <p>Si fallas la primera carta seleccionada se tapará.</p> <!-- Mecánica del juego -->
+        <button id="iniciar">Iniciar Juego</button> <!-- Botón para inicio -->
+    </div>
+    
+    <!-- Tablero del juego. Al inicio oculto -->
+    <div id="juego" style="display: none;">
+        <h2>Encuentra las parejas</h2>
+        <div id="tablero"></div> <!-- Lugar donde se cargan las cartas -->
+    </div>
+
+    <!-- Pantalla de éxito al completar el juego. Al inicio oculto -->
+    <div id="exito" style="display: none;">
+        <h2>¡Felicidades, has encontrado todas las parejas!</h2>
+        <button onclick="location.reload()">¿Quieres jugar de nuevo?</button> <!-- Botón para reiniciar la partida -->
+    </div>
+
+    <p id="mensaje"></p> <!-- Mensaje de carga antes de que se inicie el juego -->
+    
+    <script src="practica5_YTP.js"></script> <!-- JavaScript enlazado -->
+</body>
+</html>
